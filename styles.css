@@ -1,24 +1,30 @@
 html,
 body {
   height: 175% !important;
-}
-
-header {
-  height: 4em;
-  background: #845;
+  margin: 0px;
 }
 
 .parallax {
-  background: url(http://www.devstreak.com/wp-content/uploads/2016/01/Parallax-Scrolling-CodePen-Background.jpg);
+  background: url("public/assets/about-me.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
 }
 
 .parallax1 {
-    background: url(http://www.devstreak.com/wp-content/uploads/2016/01/Parallax-Scrolling-CodePen-Background.jpg);
+  background: url("public/assets/programming.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
   }
+
+  .parallax2 {
+    background: url("public/assets/programming.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      background-position-y: 0px;
+    }
 
 .parallax h1 {
   text-align: center;
@@ -34,6 +40,147 @@ header {
     padding: 15rem 0;
     font-size: 4em;
     color: white;
-    background: rgba(29, 25, 29, 0.37);
     font-family: "Trebuchet MS"
+  }
+
+  .parallax2 h1 {
+    text-align: center;
+    padding: 15rem 0;
+    font-size: 4em;
+    color: white;
+    font-family: "Trebuchet MS"
+  }
+  .title {
+    padding-top: 10rem !important;
+    padding-bottom: 0rem !important;
+    background: none !important;
+  }
+  .sub-title {
+    color: white;
+    font-family: "Trebuchet MS";
+    text-align: center;
+  }
+  .headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding-top: 15px;
+    border-radius: 50%;
+  }
+  .sub {
+    font-family: 'Sharp Sans','Open Sans',sans-serif;
+    font-weight: 500;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    clear: both;
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    line-height: 30px;
+  }
+  .click:hover {
+    margin-left: 50%;
+    padding: 0;
+    display: block;
+    margin-top: 1%;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+  }
+  .click {
+    margin-left: 50%;
+    padding: 0;
+    display: block;
+    margin-top: 1%;
+    background-color: white;
+    font-size: 16px;
+    color:  black;
+    border-radius: 5px;
+  }
+
+
+  /* relevant styles */
+
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.493);
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 24px;
+  padding: 16px 32px;
+  letter-spacing: 1px;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .column:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .technologies_container{
+    height: 150px;
+    padding: 15px;
+    padding-left: 80px;
+    background-color: darkslategray;
+  }
+
+  .technology{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+  .container {
+    padding: 0 2em 0 2em;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+ background-blend-mode: multiply,multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin: 0;
+
+  }
+  
+  @media (min-width: 1200px) {.container {
+    max-width: 100%;
+    margin: 0%
+  }
+  }
+
+  div.container{
+    margin: 0;
+    max-width: 100%;
+  }
+
+h1.tenchologies {
+    background-color: darkslategray;
+    text-align: center;
+    color: white;
+    font-family: cursive;
   }
